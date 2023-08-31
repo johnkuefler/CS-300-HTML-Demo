@@ -116,6 +116,8 @@ async function generateMeme() {
   const memeImage = document.getElementById('meme-image');
   const memeText = document.getElementById('meme-text');
 
+  memeImage.style.display = 'block';
+
   const randomImage = await fetchRandomMemeImage();
   const randomText = getRandomItem(memeTexts);
 
